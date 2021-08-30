@@ -1,22 +1,19 @@
-function view(val) {
-    document.getElementById("viewer").value += val;
-  }
+var inputValue = document.getElementById("result");
 
-  function clean() {
-    document.getElementById("viewer").value = "";
-  }
+btnInput = (val) => { inputValue.value += val; };
 
-  function backspace() {
-    var val = document.getElementById("viewer").value;
-    document.getElementById("viewer").value = val.substring(
+clean = () => { inputValue.value = ""; };
+
+backspace = () => {
+    var val = inputValue.value;
+    inputValue.value = val.substring(
       0,
       val.length - 1
     );
-  }
-
-  function equal() {
-    var val = document.getElementById("viewer").value;
+};
+equal = () => {
+    var val = inputValue.value;
     if (val) {
-      document.getElementById("viewer").value = eval(val);
+     inputValue.value = eval(val);
     }
-  }
+};
