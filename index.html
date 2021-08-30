@@ -8,81 +8,71 @@
   </head>
   <body >
       <form id="main">
-        <input type="text" id="viewer"/>
+        <input type="text" id="result"/>
         <table>
           <tr>
             <td>
-              <input type="button" value="C" class="btn" onclick="clean()" />
+              <input type="button" value="AC" class="btn" onclick="clean()" />
             </td>
             <td>
-              <input
-                type="button"
-                value="DEL"
-                class="btn"
-                onclick="backspace()"
-              />
+              <input type="button" value="CE" class="btn" onclick="backspace()"/>
             </td>
             <td>
-              <input type="button" value="/" class="btn" onclick="view('/')" />
+              <input type="button" value="/" class="btn" onclick="btnInput('/')" />
             </td>
             <td>
-              <input type="button" value="X" class="btn" onclick="view('*')" />
+              <input type="button" value="X" class="btn" onclick="btnInput('*')" />
             </td>
           </tr>
           <tr>
             <td>
-              <input type="button" value="7" class="btn" onclick="view(7)" />
+              <input type="button" value="7" class="btn" onclick="btnInput(7)" />
             </td>
             <td>
-              <input type="button" value="8" class="btn" onclick="view(8)" />
+              <input type="button" value="8" class="btn" onclick="btnInput(8)" />
             </td>
             <td>
-              <input type="button" value="9" class="btn" onclick="view(9)" />
+              <input type="button" value="9" class="btn" onclick="btnInput(9)" />
             </td>
             <td>
-              <input type="button" value="-" class="btn" onclick="view('-')" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="button" value="4" class="btn" onclick="view(4)" />
-            </td>
-            <td>
-              <input type="button" value="5" class="btn" onclick="view(5)" />
-            </td>
-            <td>
-              <input type="button" value="6" class="btn" onclick="view(6)" />
-            </td>
-            <td>
-              <input type="button" value="+" class="btn" onclick="view('+')" />
+              <input type="button" value="-" class="btn" onclick="btnInput('-')" />
             </td>
           </tr>
           <tr>
             <td>
-              <input type="button" value="1" class="btn" onclick="view(1)" />
+              <input type="button" value="4" class="btn" onclick="btnInput(4)" />
             </td>
             <td>
-              <input type="button" value="2" class="btn" onclick="view(2)" />
+              <input type="button" value="5" class="btn" onclick="btnInput(5)" />
             </td>
             <td>
-              <input type="button" value="3" class="btn" onclick="view(3)" />
+              <input type="button" value="6" class="btn" onclick="btnInput(6)" />
+            </td>
+            <td>
+              <input type="button" value="+" class="btn" onclick="btnInput('+')" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="1" class="btn" onclick="btnInput(1)" />
+            </td>
+            <td>
+              <input type="button" value="2" class="btn" onclick="btnInput(2)" />
+            </td>
+            <td>
+              <input type="button" value="3" class="btn" onclick="btnInput(3)"/>
             </td>
             <td rowspan="2">
-              <input
-                type="button"
-                value="="
-                class="btn"
-                onclick="equal()"
-                style="height: 12.4em; background-color: #ffeb3b; padding-top: 80px;"
-              />
+              <input type="button" value="=" class="btn" onclick="equal()"
+                style="height: 12.4em; background-color: #ffeb3b; padding-top: 80px;"  />
             </td>
           </tr>
           <tr>
             <td colspan="2">
-              <input type="button" value="0" class="btn" onclick="view('0')" style="width: 97%;" />
+              <input type="button" value="0" class="btn" onclick="btnInput('0')" style="width: 99%;" />
             </td>
             <td>
-              <input type="button" value="." class="btn" onclick="view('.')" />
+              <input type="button" value="." class="btn" onclick="btnInput('.')" />
             </td>
           </tr>
         </table>
